@@ -1,5 +1,9 @@
 # wechatircd
 
-Bouncer from WeChat to IRC. Absolutely still in the development stage. 
+Bouncer from WeChat to IRC. Absolutely still in the development stage.
 
-Will probably require `itchat`, `miniirc` and `omgircd3`, all installable via `pip`. 
+## Requirements
+- `itchat`
+
+## Credits
+= `omgircd.py` from `omgircd3`
