@@ -1054,9 +1054,10 @@ def run():
     config = load_configuration(args.config)
 
     server = Server(config)
-    logging.info("Starting server")
+    logging.info("Starting IRC server")
     try:
-        server.run()
+        tIRC = threading.Thread(target=server.run)
+        tIRC.start()
     except KeyboardInterrupt:
         pass
     finally:
