@@ -22,15 +22,12 @@
 #       Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #       MA 02110-1301, USA.
 
-import threading
 import socket
-import itchat
 import time
 import logging
 import argparse
 import configparser
 from select import select
-from itchat import content
 from os import environ
 
 __version__ = "WeChatIRCd 0.1"
@@ -933,7 +930,7 @@ class Server(socket.socket):
         self.hostname = self.config.get('server', 'hostname')
         self.name = self.config.get('server', 'name')
         self.creationtime = self.config.getint('server', 'creation')
-        self.version = __version__
+        self.version = "omgircd3-{}".format(__version__)
         self.motd = self.config.get('server', 'motd')
         self.ping_timeout = self.config.getfloat('server', 'ping_timeout')
 
@@ -1048,7 +1045,7 @@ class Server(socket.socket):
 
 def run():
     """
-    Run server
+    Run omgircd3 IRC server
     """
     args = load_args()
     config = load_configuration(args.config)
@@ -1061,6 +1058,7 @@ def run():
         pass
     finally:
         server.shutdown()
+
 
 if __name__ == "__main__":
     run()
