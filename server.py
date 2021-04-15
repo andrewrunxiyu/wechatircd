@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-#
-#       server.py
+# server.py
 #
 #       Copyright 2010 Curtis (Programble) <programble@gmail.com>
 #       Copyright 2015-2017 Bruno Bord <bruno@jehaisleprintemps.net>
