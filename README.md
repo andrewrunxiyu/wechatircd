@@ -12,9 +12,9 @@ Generally this works, but I find the following problems:
 - Most people are *not* familiar with the Perl programming language.
 - The code does not follow the conventions of writing in *any* programming language, making it a bit hard to read.
 - The IRC plugin has some bad protocol violations.
-  - If I do `MODE #Channel +qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`, then that's the literal channel mode.
-  - It allows having commas in nicknames and channel names, while commas are supposed to be argument separators by protocol, except if it's in the last argument prefixed with `:`.
-  - It allows super long idents and hosts, making some IRC clients crash.
+	- If I do `MODE #Channel +qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM`, then that's the literal channel mode.
+	- It allows having commas in nicknames and channel names, while commas are supposed to be argument separators by protocol, except if it's in the last argument prefixed with `:`.
+	- It allows super long idents and hosts, making some IRC clients crash.
 
 As a side effect, it will be easy for
 
