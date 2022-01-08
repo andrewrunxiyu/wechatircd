@@ -1,4 +1,7 @@
 # WeChatIRCd
+
+# This repository has nothing and is archived. I might start it again on https://project.andrewyu.org.
+
 ## Objective
 [WeChat](https://wechat.com) is the largest instant messaging platform for the Chinese nowadays. Even though it is convenient, it is still a centralized service with a large company that I do not really trust behind it.
 
